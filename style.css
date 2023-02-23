@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+body {
+  background-color: #73c8a9;
+  font-family: "Poppins", sans-serif;
+  /* background-image: linear-gradient(to right, #73c8a9, #373b44); */
+  background-color: #f4d03f;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+}
+canvas {
+  border: 3px solid #2e2e2e;
+  border-radius: 10px;
+  display: block;
+  margin: 50px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: url("assets/Flappy_Bird_Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.backdrop-blur {
+  filter: blur(5px);
+}
+
+#end-menu {
+  /* Toggle the display using JS */
+  display: none;
+  margin: 50px auto;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 999;
+}
+
+#score-display {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
